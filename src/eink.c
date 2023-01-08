@@ -145,7 +145,7 @@ void eink_render_advanced(uint8_t* buffer, uint8_t cycles, bool inverse) {
   }
 }
 
-void eink_init() { epd_base_init(EPD_WIDTH); }
+void eink_init() { epd_init(EPD_OPTIONS_DEFAULT); }
 
 void eink_power_on() { epd_poweron(); }
 
