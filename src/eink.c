@@ -65,7 +65,7 @@ static void eink_set_bit(uint32_t index, bool value, uint8_t* buffer) {
 static void eink_fill(uint8_t color) {
   uint8_t row[EPD_LINE_BYTES];
   memset(row, color, EPD_LINE_BYTES);
-  
+
   reorder_line_buffer((uint32_t*)row);
 
   epd_start_frame();
