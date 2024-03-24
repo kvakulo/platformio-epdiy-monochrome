@@ -8,8 +8,12 @@
 #include "epd_driver.h"
 #include "lut.h"
 
+#include "esphome/core/log.h"
+
 #define WHITE 0b10101010 // 0xAA
 #define BLACK 0b01010101 // 0x55
+
+static const char *const TAG = "platformio-epdiy-monochrome";
 
 static const uint8_t ROW_DELAY = 120;
 static const uint8_t UPDATE_CYCLES = 16;
@@ -141,6 +145,7 @@ void eink_render(uint8_t* buffer) {
 
 void eink_render_advanced(uint8_t* buffer, uint8_t cycles, bool inverse) {
   for (uint8_t i = 0; i < cycles; i++) {
+    ESP_LOGD(TAG, "eink_render_advanced");
     eink_draw(buffer, inverse);
   }
 }
