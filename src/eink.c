@@ -8,7 +8,7 @@
 #include "epd_driver.h"
 #include "lut.h"
 
-#include "esphome/core/log.h"
+#include "esp_log.h"
 
 #define WHITE 0b10101010 // 0xAA
 #define BLACK 0b01010101 // 0x55
