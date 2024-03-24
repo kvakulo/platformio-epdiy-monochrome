@@ -25,7 +25,7 @@
     [
         {
             "name": "epdiy",
-            "version": "https://github.com/vroland/epdiy.git@1.0.0"
+            "version": "https://github.com/vroland/epdiy.git#2d76ac7e8b48868807f4a4c5347ca59ecfd08e8f"
         }
     ]
 }
